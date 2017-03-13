@@ -78,25 +78,25 @@
         android:id="@+id/eTDividend"
         android:layout_width="210dp"
         android:layout_height="40dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="44dp"
         android:background="@android:color/holo_green_light"
         android:ems="10"
-        android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/tVTitle"
-        android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        android:inputType="number|numberSigned|numberDecimal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTitle" />
 
     <EditText
         android:id="@+id/eTDivisor"
         android:layout_width="210dp"
         android:layout_height="40dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="22dp"
         android:background="@android:color/holo_green_light"
         android:ems="10"
-        android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/eTDividend"
-        android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        android:inputType="number|numberSigned|numberDecimal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTDividend" />
 
     <Button
         android:id="@+id/bDividiere"
