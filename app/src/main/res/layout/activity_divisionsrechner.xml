@@ -7,4 +7,60 @@
     android:layout_height="match_parent"
     tools:context="alexanderwidmann.se2einzelphase.Divisionsrechner">
 
+    <TextView
+        android:id="@+id/tVTitle"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Divisionsrechner"
+        android:textSize="30sp"
+        tools:textColorLink="@android:color/holo_green_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/vtOutput"
+        style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="Output"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVDivisor" />
+
+    <TextView
+        android:id="@+id/tVDivisor"
+        style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:text="Divisor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVDividend" />
+
+    <TextView
+        android:id="@+id/tVDividend"
+        style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+        android:layout_width="103dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:text="Dividend"
+        android:background="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTitle" />
 </android.support.constraint.ConstraintLayout>
