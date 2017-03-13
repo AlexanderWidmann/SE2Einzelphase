@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
     tools:context="alexanderwidmann.se2einzelphase.Divisionsrechner">
     <TextView
         android:id="@+id/tVTitle"
@@ -17,7 +19,6 @@
         android:textSize="30sp"
         tools:textColorLink="@android:color/holo_green_dark"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="72dp" />
@@ -28,27 +29,24 @@
         android:layout_width="105dp"
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="41dp"
         android:background="@null"
         android:ems="10"
         android:text="Output"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tVDivisor" />
+        app:layout_constraintTop_toBottomOf="@+id/bDividiere" />
 
     <TextView
         android:id="@+id/tVShowOutput"
         style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="41dp"
         android:background="@android:color/holo_green_light"
         android:ems="10"
-        android:text="Result"
-        app:layout_constraintLeft_toRightOf="@+id/vtOutput"
-        app:layout_constraintTop_toBottomOf="@+id/eTDivisor" />
+        app:layout_constraintTop_toBottomOf="@+id/bDividiere"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/tVDivisor"
@@ -56,7 +54,6 @@
         android:layout_width="105dp"
         android:layout_height="40dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="22dp"
         android:background="@null"
         android:ems="10"
@@ -69,7 +66,6 @@
         style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
         android:layout_width="105dp"
         android:layout_height="40dp"
-        android:layout_marginStart="15dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="44dp"
         android:ems="10"
@@ -82,25 +78,36 @@
         android:id="@+id/eTDividend"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="44dp"
         android:background="@android:color/holo_green_light"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintLeft_toRightOf="@+id/tVDividend"
-        app:layout_constraintTop_toBottomOf="@+id/tVTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tVTitle"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
         android:id="@+id/eTDivisor"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="22dp"
         android:background="@android:color/holo_green_light"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintLeft_toRightOf="@+id/tVDivisor"
-        app:layout_constraintTop_toBottomOf="@+id/eTDividend" />
+        app:layout_constraintTop_toBottomOf="@+id/eTDividend"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bDividiere"
+        android:layout_width="328dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Dividiere"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTDivisor"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
