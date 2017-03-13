@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="alexanderwidmann.se2einzelphase.Divisionsrechner">
-
     <TextView
         android:id="@+id/tVTitle"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
@@ -29,7 +29,7 @@
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="93dp"
         android:background="@null"
         android:ems="10"
         android:text="Output"
@@ -37,13 +37,27 @@
         app:layout_constraintTop_toBottomOf="@+id/tVDivisor" />
 
     <TextView
+        android:id="@+id/tVShowOutput"
+        style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="93dp"
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:text="Result"
+        app:layout_constraintLeft_toRightOf="@+id/vtOutput"
+        app:layout_constraintTop_toBottomOf="@+id/eTDivisor" />
+
+    <TextView
         android:id="@+id/tVDivisor"
         style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
         android:layout_width="105dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:background="@null"
         android:ems="10"
         android:text="Divisor"
@@ -53,8 +67,8 @@
     <TextView
         android:id="@+id/tVDividend"
         style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
-        android:layout_width="103dp"
-        android:layout_height="39dp"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="44dp"
@@ -63,4 +77,30 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVTitle" />
+
+    <EditText
+        android:id="@+id/eTDividend"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/tVDividend"
+        app:layout_constraintTop_toBottomOf="@+id/tVTitle" />
+
+    <EditText
+        android:id="@+id/eTDivisor"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/holo_green_light"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/tVDivisor"
+        app:layout_constraintTop_toBottomOf="@+id/eTDividend" />
 </android.support.constraint.ConstraintLayout>
